@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,70 +24,75 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 8, ../sass/style.scss */
+/* Body */
+/* line 9, ../sass/style.scss */
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light",  "Helvetica Neue", Helvetica, Arial,  "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
+body .bold {
+  font-weight: bold;
+}
+/* line 19, ../sass/style.scss */
 body h1 {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 19, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 body h2 {
   font-size: 25px;
 }
-/* line 23, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 body h4 {
   font-size: 14px;
   color: gray;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .background-pic {
   background: url("../img/ocean.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -96,52 +101,86 @@ body h4 {
   background-size: cover;
 }
 
-/* line 37, ../sass/style.scss */
-.bold {
-  font-weight: bold;
-}
-
-/* line 41, ../sass/style.scss */
-.header-container {
-  margin-top: 100px;
-  height: 10%;
-  width: 100%;
-}
-
-/* line 47, ../sass/style.scss */
-.header {
-  /*display: inline-block;*/
-  /*margin: 0 auto;*/
-  text-align: center;
-}
-/* line 52, ../sass/style.scss */
-.header .tag {
-  letter-spacing: 2.5px;
-}
-/* line 56, ../sass/style.scss */
-.header a {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 62, ../sass/style.scss */
+/* Animation Duration and deley */
+/* line 43, ../sass/style.scss */
 #header {
   -webkit-animation-duration: 4s;
   -webkit-animation-delay: 1s;
   /*-webkit-animation-iteration-count: infinite;*/
 }
 
-/* line 68, ../sass/style.scss */
-.social-icon {
-  color: black;
-  /*font-size: 15px;*/
-}
-/* line 72, ../sass/style.scss */
-.social-icon:hover {
-  color: white;
+/* Container that the header lives in */
+/* line 50, ../sass/style.scss */
+.header-container {
+  margin-top: 100px;
+  height: 10%;
+  width: 100%;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
+.header {
+  /*display: inline-block;*/
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+/* line 61, ../sass/style.scss */
+.header .tag {
+  letter-spacing: 2.5px;
+}
+/* line 65, ../sass/style.scss */
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 71, ../sass/style.scss */
+.links {
+  position: relative;
+  float: right;
+  margin-right: 10%;
+  top: 0px;
+  word-spacing: 25px;
+  font-weight: bold;
+}
+/* line 79, ../sass/style.scss */
+.links a {
+  text-decoration: none;
+  color: black;
+  /*font-size: 18px;*/
+}
+/* line 84, ../sass/style.scss */
+.links a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* line 91, ../sass/style.scss */
+.work-links {
+  position: relative;
+  float: right;
+  margin-right: 10%;
+  top: 0px;
+  word-spacing: 25px;
+  font-weight: bold;
+}
+/* line 99, ../sass/style.scss */
+.work-links a {
+  text-decoration: none;
+  color: gray;
+  /*font-size: 18px;*/
+}
+/* line 104, ../sass/style.scss */
+.work-links a:hover {
+  color: black;
+  font-weight: bold;
+}
+/* line 110, ../sass/style.scss */
+.work-links .current {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* line 116, ../sass/style.scss */
 .social {
   /*display: inline-block;*/
   position: relative;
@@ -151,38 +190,7 @@ body h4 {
   word-spacing: 25px;
 }
 
-/* line 86, ../sass/style.scss */
-.links {
-  position: relative;
-  float: right;
-  margin-right: 10%;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
-}
-/* line 94, ../sass/style.scss */
-.links a {
-  text-decoration: none;
-  color: black;
-  /*font-size: 18px;*/
-}
-/* line 99, ../sass/style.scss */
-.links a:hover {
-  color: white;
-  font-weight: bold;
-}
-
-/* line 106, ../sass/style.scss */
-.work-social-icon {
-  color: gray;
-  /*font-size: 15px;*/
-}
-/* line 110, ../sass/style.scss */
-.work-social-icon:hover {
-  color: black;
-}
-
-/* line 115, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .work-social {
   /*display: inline-block;*/
   color: gray;
@@ -193,34 +201,28 @@ body h4 {
   word-spacing: 25px;
 }
 
-/* line 125, ../sass/style.scss */
-.work-links {
-  position: relative;
-  float: right;
-  margin-right: 10%;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
-}
-/* line 133, ../sass/style.scss */
-.work-links a {
-  text-decoration: none;
-  color: gray;
-  /*font-size: 18px;*/
-}
-/* line 138, ../sass/style.scss */
-.work-links a:hover {
+/* line 135, ../sass/style.scss */
+.social-icon {
   color: black;
-  font-weight: bold;
+  /*font-size: 15px;*/
 }
+/* line 139, ../sass/style.scss */
+.social-icon:hover {
+  color: white;
+}
+
 /* line 144, ../sass/style.scss */
-.work-links .current {
+.work-social-icon {
+  color: gray;
+  /*font-size: 15px;*/
+}
+/* line 148, ../sass/style.scss */
+.work-social-icon:hover {
   color: black;
-  border-bottom: 2px solid black;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 152, ../sass/style.scss */
+  /* line 155, ../sass/style.scss */
   .header-container {
     margin-top: 50px;
     /*width: 200px;*/
@@ -229,18 +231,18 @@ body h4 {
     text-align: center;
   }
 
-  /* line 160, ../sass/style.scss */
+  /* line 163, ../sass/style.scss */
   .header {
     position: relative;
     padding-top: 0px;
     text-align: center;
   }
-  /* line 165, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   .header .tag {
     letter-spacing: 2.5px;
   }
 
-  /* line 170, ../sass/style.scss */
+  /* line 173, ../sass/style.scss */
   .links {
     position: relative;
     text-align: center;
@@ -251,7 +253,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 180, ../sass/style.scss */
+  /* line 183, ../sass/style.scss */
   .social {
     position: relative;
     text-align: center;
@@ -262,7 +264,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 190, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .work-links {
     position: relative;
     text-align: center;
@@ -273,7 +275,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 200, ../sass/style.scss */
+  /* line 203, ../sass/style.scss */
   .work-social {
     position: relative;
     text-align: center;
@@ -284,36 +286,36 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 210, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   .work-content {
     position: relative;
     padding-top: 70px;
   }
 
-  /* line 215, ../sass/style.scss */
+  /* line 218, ../sass/style.scss */
   .job-description {
     padding-bottom: 20px;
   }
 }
-/* line 221, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .work-content {
   position: relative;
   top: 50px;
   margin-left: 8%;
 }
-/* line 226, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .work-content a {
   text-decoration: none;
   color: black;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .job-description {
   padding-top: 10px;
   color: gray;
 }
 
-/* line 238, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .work-twitter a:hover {
   color: blue;
 }

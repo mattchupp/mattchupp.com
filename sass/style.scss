@@ -5,11 +5,16 @@
 
 @import "compass/reset";
 
+/* Body */
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
-               "Helvetica Neue", Helvetica, Arial, 
-               "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+               "Helvetica Neue", Helvetica, Arial,
+               "Lucida Grande", sans-serif;
   font-weight: 300;
+
+  .bold {
+    font-weight: bold;
+  }
 
   h1 {
     font-size: 30px;
@@ -34,13 +39,17 @@ body {
           background-size: cover;
 }
 
-.bold {
-  font-weight: bold;
+/* Animation Duration and deley */
+#header {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  /*-webkit-animation-iteration-count: infinite;*/
 }
 
+/* Container that the header lives in */
 .header-container {
   margin-top: 100px;
-  height: 10%; 
+  height: 10%;
   width: 100%;
 }
 
@@ -57,30 +66,6 @@ body {
     text-decoration: none;
     color: black;
   }
-}
-
-#header {
-  -webkit-animation-duration: 4s;
-  -webkit-animation-delay: 1s;
-  /*-webkit-animation-iteration-count: infinite;*/
-}
-
-.social-icon {
-  color: black;
-  /*font-size: 15px;*/
-
-   &:hover {
-    color: white;
-  }
-}
-
-.social {
-  /*display: inline-block;*/
-  position: relative;
-  float: left;
-  margin-left: 10%; 
-  top: 0px;
-  word-spacing: 25px;
 }
 
 .links {
@@ -101,25 +86,6 @@ body {
       font-weight: bold;
     }
   }
-}
-
-.work-social-icon {
-  color: gray;
-  /*font-size: 15px;*/
-
-   &:hover {
-    color: black;
-  }
-}
-
-.work-social {
-  /*display: inline-block;*/
-  color: gray;
-  position: relative;
-  float: left;
-  margin-left: 10%; 
-  top: 0px;
-  word-spacing: 25px;
 }
 
 .work-links {
@@ -144,6 +110,43 @@ body {
   .current {
     color: black;
     border-bottom: 2px solid black;
+  }
+}
+
+.social {
+  /*display: inline-block;*/
+  position: relative;
+  float: left;
+  margin-left: 10%;
+  top: 0px;
+  word-spacing: 25px;
+}
+
+.work-social {
+  /*display: inline-block;*/
+  color: gray;
+  position: relative;
+  float: left;
+  margin-left: 10%;
+  top: 0px;
+  word-spacing: 25px;
+}
+
+.social-icon {
+  color: black;
+  /*font-size: 15px;*/
+
+   &:hover {
+    color: white;
+  }
+}
+
+.work-social-icon {
+  color: gray;
+  /*font-size: 15px;*/
+
+   &:hover {
+    color: black;
   }
 }
 
@@ -218,6 +221,12 @@ body {
 
 }
 
+@media screen and (min-width: 768px) {
+
+  
+
+}
+
 .work-content {
   position: relative;
   top: 50px;
@@ -239,5 +248,3 @@ body {
     color: blue;
   }
 }
-
-
