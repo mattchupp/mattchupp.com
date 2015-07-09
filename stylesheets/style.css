@@ -101,8 +101,15 @@ body h4 {
   background-size: cover;
 }
 
+/* line 42, ../sass/style.scss */
+.work-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Animation Duration and deley */
-/* line 43, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #header {
   -webkit-animation-duration: 4s;
   -webkit-animation-delay: 1s;
@@ -110,30 +117,32 @@ body h4 {
 }
 
 /* Container that the header lives in */
-/* line 50, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .header-container {
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   height: 10%;
-  width: 100%;
+  width: 75%;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .header {
   /*display: inline-block;*/
   /*margin: 0 auto;*/
   text-align: center;
 }
-/* line 61, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .header .tag {
   letter-spacing: 2.5px;
 }
-/* line 65, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .header a {
   text-decoration: none;
   color: black;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .links {
   position: relative;
   float: right;
@@ -142,19 +151,19 @@ body h4 {
   word-spacing: 25px;
   font-weight: bold;
 }
-/* line 79, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .links a {
   text-decoration: none;
   color: black;
   /*font-size: 18px;*/
 }
-/* line 84, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .links a:hover {
   color: white;
   font-weight: bold;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .work-links {
   position: relative;
   float: right;
@@ -163,24 +172,24 @@ body h4 {
   word-spacing: 25px;
   font-weight: bold;
 }
-/* line 99, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .work-links a {
   text-decoration: none;
   color: gray;
   /*font-size: 18px;*/
 }
-/* line 104, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .work-links a:hover {
   color: black;
   font-weight: bold;
 }
-/* line 110, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .work-links .current {
   color: black;
   border-bottom: 2px solid black;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .social {
   /*display: inline-block;*/
   position: relative;
@@ -190,7 +199,7 @@ body h4 {
   word-spacing: 25px;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .work-social {
   /*display: inline-block;*/
   color: gray;
@@ -201,28 +210,29 @@ body h4 {
   word-spacing: 25px;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .social-icon {
   color: black;
   /*font-size: 15px;*/
 }
-/* line 139, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .social-icon:hover {
   color: white;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .work-social-icon {
   color: gray;
   /*font-size: 15px;*/
 }
-/* line 148, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .work-social-icon:hover {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
-  /* line 155, ../sass/style.scss */
+/*@media screen and (max-width: 768px) {*/
+@media screen and (max-width: 800px) {
+  /* line 164, ../sass/style.scss */
   .header-container {
     margin-top: 50px;
     /*width: 200px;*/
@@ -231,18 +241,18 @@ body h4 {
     text-align: center;
   }
 
-  /* line 163, ../sass/style.scss */
+  /* line 172, ../sass/style.scss */
   .header {
     position: relative;
     padding-top: 0px;
     text-align: center;
   }
-  /* line 168, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .header .tag {
     letter-spacing: 2.5px;
   }
 
-  /* line 173, ../sass/style.scss */
+  /* line 182, ../sass/style.scss */
   .links {
     position: relative;
     text-align: center;
@@ -253,7 +263,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 183, ../sass/style.scss */
+  /* line 192, ../sass/style.scss */
   .social {
     position: relative;
     text-align: center;
@@ -264,7 +274,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 193, ../sass/style.scss */
+  /* line 202, ../sass/style.scss */
   .work-links {
     position: relative;
     text-align: center;
@@ -275,7 +285,7 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 203, ../sass/style.scss */
+  /* line 212, ../sass/style.scss */
   .work-social {
     position: relative;
     text-align: center;
@@ -286,36 +296,37 @@ body h4 {
     word-spacing: 25px;
   }
 
-  /* line 213, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .work-content {
     position: relative;
     padding-top: 70px;
   }
 
-  /* line 218, ../sass/style.scss */
+  /* line 227, ../sass/style.scss */
   .job-description {
     padding-bottom: 20px;
   }
 }
-/* line 230, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .work-content {
   position: relative;
   top: 50px;
-  margin-left: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-/* line 235, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .work-content a {
   text-decoration: none;
   color: black;
 }
 
-/* line 241, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .job-description {
   padding-top: 10px;
   color: gray;
 }
 
-/* line 247, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .work-twitter a:hover {
   color: blue;
 }
