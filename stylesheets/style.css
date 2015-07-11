@@ -340,5 +340,15 @@ body h4 {
 
 /* line 264, ../sass/style.scss */
 .work-twitter a:hover {
-  color: blue;
+  color: #00aced;
+}
+
+/* line 270, ../sass/style.scss */
+.work-facebook a:hover {
+  color: #3b5998;
+}
+
+/* line 276, ../sass/style.scss */
+.work-instagram a:hover {
+  color: #517fa4;
 }
