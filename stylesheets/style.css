@@ -328,8 +328,17 @@ body h4 {
   padding-top: 10px;
   color: gray;
 }
+/* line 252, ../sass/style.scss */
+.job-description a {
+  color: gray;
+  text-decoration: underline;
+}
+/* line 256, ../sass/style.scss */
+.job-description a:hover {
+  color: black;
+}
 
-/* line 254, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .work-twitter a:hover {
   color: blue;
 }

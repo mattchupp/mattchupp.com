@@ -248,6 +248,16 @@ body {
 .job-description {
   padding-top: 10px;
   color: gray;
+
+  a {
+    color: gray;
+    text-decoration: underline;
+
+    &:hover {
+      color: black;
+    }
+  }
+
 }
 
 .work-twitter {
@@ -255,3 +265,4 @@ body {
     color: blue;
   }
 }
+
