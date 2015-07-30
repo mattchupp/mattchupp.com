@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<title>Matt Chupp &#8212; Developer</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- CSS -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="animate.min.css">
+	<!-- Social Icons -->
 	<link href="webfonts/ss-social-regular.css" rel="stylesheet" />
+
+	<!-- Style.css -->
 	<link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/animate.min.css">
 
-</head>
+	<!-- Typeface -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-<body class="background-pic">
+	<!-- JQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- WOW.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script>
+ 		new WOW().init();
+	</script>
 
-	<div id="header" class="header-container animated fadeIn">
+	<script type="text/javascript">
+		$(window).scroll(function(){
+		    $(".section-large").css("opacity", 1 - $(window).scrollTop() / 1500);
+	  	});
+	</script>
 
+<<<<<<< HEAD
 		<div class="header">
 			<a href="/">
 			<h1>Matt Chupp</h1>
@@ -28,16 +41,46 @@
 			<a href="http://instagr.am/mattychupp" class="ss-social ss-icon social-icon ss-instagram" target="_blank"></a>
 			<a href="http://facebook.com/matt.chupp" class="ss-social ss-icon social-icon ss-facebook" target="_blank"></a>
 			<a href="http://github.com/mattchupp" class="ss-social ss-icon social-icon ss-github" target="_blank"></a>
-		</div>
+=======
+</head>
+<body>
 
-		<div class="links">
-			<a href="work.html">Work</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="http://blog.mattchupp.com" target="_blank">Blog</a>
+	<div id="splash" class="section-large">
+		<div id="main-splash" class="animated fadeIn">
+			<a href="#about" class="header"><h1>Matt Chupp</h1></a>
+			<div class="social">
+				<a href="http://www.twitter.com/mattchupp" class="ss-social ss-icon social-icon social ss-twitter" target="_blank"></a>
+				<a href="http://instagr.am/mattychupp" class="ss-social ss-icon social-icon social ss-instagram" target="_blank"></a>
+				<a href="http://github.com/mattchupp" class="ss-social ss-icon social-icon social ss-github" target="_blank"></a>
+			</div>
+>>>>>>> 4b4932a7fd774c1306ed364147a9f9c4eff89de7
 		</div>
-		<div style="clear:both;"></div>
 	</div>
 
-</body>
+	<div id="about" class="section-20">
+		<h2 class="wow fadeIn">About</h2>
+		<div class="about wow fadeIn">
+			<p>Hi, <a href="about/index.html">I'm Matt</a> and I <a href="portfolio/index.html" target="_blank">make websites</a>. 
+				I also like to play guitar and share my thoughts on my 
+				<a href="http://mattchupp.com/blog" target="_blank">blog</a>.</p>
+		</div>
+	</div>
+	<div id="work" class="section-100 black white-txt history">
+		<h2 class="wow slideInLeft">History</h2>
+		<div class="section-container wow slideInRight">
+			<h2>Work</h2>
+			<hr />
+			<p class="bold">IT Intern @ Elevation Church</p>
+			<p>Summer 2015</p>
+			<p class="bold">Web Developer @ Benner Library</p>
+			<p>August 2014 - May 2015</p>
+			<p class="bold">IT Intern @ The Vineyard Church</p>
+			<p>Summer 2014</p>
+			<h2>Skills</h2>
+			<hr />
+			<p>CSS | Javascript | JQuery </p>
+		</div>
+	</div>	
 
+</body>
 </html>
