@@ -1,281 +1,255 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*Styles*/
 
-@import "compass/reset";
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	margin: 0;
 
-/* Body */
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-               "Helvetica Neue", Helvetica, Arial,
-               "Lucida Grande", sans-serif;
-  font-weight: 300;
+	a {
+		text-decoration: none;
+		color: blue;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	hr {
+		max-width: 500px;
+	}
+	h1, h2, h3, p {
+		text-align: center;
+		margin-top: 0;
+	}
 
-  .bold {
-    font-weight: bold;
-  }
+	h1, h2, h3 {
+		text-transform: uppercase;
+	}
 
-  h1 {
-    font-size: 30px;
-    font-weight: bold;
-  }
+	h2, h3 {
+		letter-spacing: 5px;
+		text-decoration: underline;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 
-  h2 {
-    font-size: 25px;
-  }
-
-  h4 {
-    font-size: 14px;
-    color: gray;
-  }
+	.black {
+		/*background-color: black;*/
+		background-color: #2a3440;
+	}
+	.white-txt {
+		color: white;
+	}
+	.bold {
+		font-weight: bold;
+	}
 }
 
-.background-pic {
-  background: url("../img/ocean.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+.section-large {
+	/*background: url("../ocean.png") no-repeat center center fixed;*/
+	background-color: #2a3440;
+	-webkit-background-size: cover;
+  	   -moz-background-size: cover;
+  		 -o-background-size: cover;
+  			background-size: cover;
+	height: 100vh; 
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	transition: opacity 1s ease;
+
+	h1 {
+		/*color: #fff;*/
+		color: rgba(255,255,255,.5);
+		font-size: 40px;
+		letter-spacing: 10px;
+		padding-top: 5em;
+	}
+
+	a {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-.work-container {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 720px) {
+	.section-large {
+		h1 {
+			font-size: 30px;
+			letter-spacing: 10px;
+		}
+	}
+	.section-large-link {
+		font-size: 15px;
+		padding: 0;
+		position: relative;
+	}
 }
 
-/* Animation Duration and deley */
-#header {
-  -webkit-animation-duration: 4s;
-  -webkit-animation-delay: 1s;
-  /*-webkit-animation-iteration-count: infinite;*/
+.section-large-link {
+	position: relative;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 50px;
+	float: 0;
+	text-align: center;
+}
+.section-10 {
+	height: 10vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	@media screen and (max-width: 720px) {
+		height: 20vh;
+	}
+}
+.section-20 {
+	height: 25vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	h2 {
+		padding-top: 20px;
+	}
+
+	@media screen and (max-width: 720px) {
+		height: 30vh;
+	}
+}
+.section-50 {
+	height: 50vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.section-70 {
+	height: 70vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.section-80 {
+	height: 80vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+
+	@media screen and (max-width: 600px) {
+		height: 90vh;
+	}
+}
+.section-100 {
+	height: 100vh; 
+	width: 100%;
+	margin: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.section-container {
+	height: 75%;
+	max-width: 700px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-bottom: auto;
+	border-radius: 15px;
+
+	h2, h3, p {
+		color: black;
+		text-decoration: none;
+	}
+	h2 {
+		padding-top: 25px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+		height: 80%;
+		h2 {
+			padding-top: 10px;
+		}
+	}
 }
 
-/* Container that the header lives in */
-.header-container {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
-  /*display: inline-block;*/
-  height: 12%;
-  /*width: 90%;*/
-  max-width: 75%;
+.no-underline {
+	text-decoration: none;
+}
+
+
+.about {
+	font-size: 18px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+	p {
+		padding-bottom: 10px;
+	}
+
 }
 
 .header {
-  /*display: inline-block;*/
-  /*margin: 0 auto;*/
-  text-align: center;
+	text-decoration: none;
+	color: black;
 
-  .tag {
-    letter-spacing: 2.5px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.links {
-  position: relative;
-  float: right;
-  margin-top: 0px;
-  margin-right: 0;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
-
-  a {
-    text-decoration: none;
-    color: black;
-    /*font-size: 18px;*/
-
-    &:hover {
-      color: white;
-      font-weight: bold;
-    }
-  }
-}
-
-.work-links {
-  position: relative;
-  float: right;
-  margin-right: 0;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
-
-  a {
-    text-decoration: none;
-    color: gray;
-    /*font-size: 18px;*/
-
-    &:hover {
-      color: black;
-      font-weight: bold;
-    }
-  }
-
-  .current {
-    color: black;
-    border-bottom: 2px solid black;
-  }
+	&:hover {
+		text-decoration: none;
+		color: black;
+	}
 }
 
 .social {
-  position: relative;
-  float: left;
-  margin-left: 0;
-  top: 0px;
-  word-spacing: 25px;
+	text-align: center;
+	color: rgba(255,255,255,.5);
+	font-size: 1.1em;
+	word-spacing: 4em;
+
+	a {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: none;
+			color: gray;
+		}
+	}
 }
 
-.work-social {
-  /*display: inline-block;*/
-  color: gray;
-  position: relative;
-  float: left; 
-  margin-left: 0;
-  top: 0px;
-  word-spacing: 25px;
+
+#main-splash {
+  -webkit-animation-duration: 3s;
+  	 -moz-animation-duration: 3s;
+  	   -o-animation-duration: 3s;
+  	   	  animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  	 -moz-animation-delay: 1s;
+  	   -o-animation-delay: 1s;
+  	 	  animation-delay: 1s;
 }
 
-.social-icon {
-  color: black;
-  font-size: 16px;
-
-   &:hover {
-    color: white;
-  }
+#social-link {
+  -webkit-animation-duration: 3s;
+  	 -moz-animation-duration: 3s;
+  	   -o-animation-duration: 3s;
+  	   	  animation-duration: 3s;
+  /*-webkit-animation-delay: 1s;
+  	 -moz-animation-delay: 1s;
+  	   -o-animation-delay: 1s;
+  	 	  animation-delay: 1s;*/
 }
 
-.work-social-icon {
-  color: gray;
-  /*font-size: 15px;*/
-
-   &:hover {
-    color: black;
-  }
-}
-
-/*@media screen and (max-width: 768px) {*/
-@media screen and (max-width: 800px) {
-
-  .header-container {
-    margin-top: 50px;
-    /*width: 200px;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .header {
-    position: relative;
-    padding-top: 0px;
-    text-align: center;
-
-    .tag {
-      letter-spacing: 2.5px;
-    }
-  }
-
-  .links {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    top: 60px;
-    word-spacing: 25px;
-  }
-
-  .social {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 40px;
-    word-spacing: 25px;
-  }
-
-  .work-links {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    top: 60px;
-    word-spacing: 25px;
-  }
-
-  .work-social {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 40px;
-    word-spacing: 25px;
-  }
-
-  .work-content {
-    position: relative;
-    padding-top: 70px;
-  }
-
-  .job-description {
-    padding-bottom: 20px;
-  }
-
-}
-
-.work-content {
-  position: relative;
-  top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.job-description {
-  padding-top: 10px;
-  color: gray;
-
-  a {
-    color: gray;
-    text-decoration: underline;
-
-    &:hover {
-      color: black;
-    }
-  }
-
-}
-
-.work-twitter {
-  a:hover {
-    color: #00aced;
-  }
-}
-
-.work-facebook {
-  a:hover {
-    color: #3b5998;
-  }
-}
-
-.work-instagram {
-  a:hover {
-    color: #517fa4
-  }
-}
 
 

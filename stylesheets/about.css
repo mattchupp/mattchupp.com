@@ -1,4 +1,4 @@
-/* line 1, ../sass/portfolio.scss */
+/* line 1, ../sass/about.scss */
 html, body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -6,61 +6,61 @@ html, body {
   height: 100%;
   margin: 0;
 }
-/* line 8, ../sass/portfolio.scss */
+/* line 8, ../sass/about.scss */
 html a, body a {
   text-decoration: none;
   color: blue;
 }
-/* line 11, ../sass/portfolio.scss */
+/* line 11, ../sass/about.scss */
 html a:hover, body a:hover {
   text-decoration: underline;
 }
-/* line 15, ../sass/portfolio.scss */
+/* line 15, ../sass/about.scss */
 html hr, body hr {
   max-width: 500px;
 }
-/* line 18, ../sass/portfolio.scss */
+/* line 18, ../sass/about.scss */
 html h1, html h2, html h3, html p, body h1, body h2, body h3, body p {
   text-align: center;
   margin-top: 0;
 }
-/* line 23, ../sass/portfolio.scss */
+/* line 23, ../sass/about.scss */
 html h1, html h2, html h3, body h1, body h2, body h3 {
   text-transform: uppercase;
 }
-/* line 27, ../sass/portfolio.scss */
+/* line 27, ../sass/about.scss */
 html h2, html h3, body h2, body h3 {
   letter-spacing: 5px;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 34, ../sass/portfolio.scss */
+/* line 34, ../sass/about.scss */
 html .black, body .black {
   /*background-color: black;*/
   background-color: #2a3440;
 }
-/* line 38, ../sass/portfolio.scss */
+/* line 38, ../sass/about.scss */
 html .white-txt, body .white-txt {
   color: white;
 }
-/* line 41, ../sass/portfolio.scss */
+/* line 41, ../sass/about.scss */
 html .bold, body .bold {
   font-weight: bold;
 }
-/* line 44, ../sass/portfolio.scss */
+/* line 44, ../sass/about.scss */
 html .txt-center, body .txt-center {
   text-align: center;
 }
 
-/* line 49, ../sass/portfolio.scss */
+/* line 49, ../sass/about.scss */
 .container {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 55, ../sass/portfolio.scss */
+/* line 55, ../sass/about.scss */
 .section-large {
   background-color: #2a3440;
   -webkit-background-size: cover;
@@ -74,7 +74,7 @@ html .txt-center, body .txt-center {
   position: relative;
   transition: opacity 1s ease;
 }
-/* line 68, ../sass/portfolio.scss */
+/* line 68, ../sass/about.scss */
 .section-large h1 {
   /*color: #fff;*/
   color: rgba(255, 255, 255, 0.5);
@@ -82,7 +82,7 @@ html .txt-center, body .txt-center {
   letter-spacing: 10px;
   padding-top: .5em;
 }
-/* line 76, ../sass/portfolio.scss */
+/* line 76, ../sass/about.scss */
 .section-large a {
   position: relative;
   margin-left: auto;
@@ -90,68 +90,84 @@ html .txt-center, body .txt-center {
 }
 
 @media screen and (max-width: 720px) {
-  /* line 85, ../sass/portfolio.scss */
+  /* line 85, ../sass/about.scss */
   .section-large h1 {
     font-size: 30px;
     letter-spacing: 10px;
   }
 
-  /* line 90, ../sass/portfolio.scss */
+  /* line 90, ../sass/about.scss */
   .section-large-link {
     font-size: 15px;
     padding: 0;
     position: relative;
   }
 }
-/* line 97, ../sass/portfolio.scss */
+/* line 97, ../sass/about.scss */
 .header {
   text-decoration: none;
   color: black;
 }
-/* line 101, ../sass/portfolio.scss */
+/* line 101, ../sass/about.scss */
 .header:hover {
   text-decoration: none;
   color: black;
 }
 
-/* line 107, ../sass/portfolio.scss */
+/* line 107, ../sass/about.scss */
 .social {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.1em;
   word-spacing: 4em;
 }
-/* line 113, ../sass/portfolio.scss */
+/* line 113, ../sass/about.scss */
 .social a {
   text-decoration: none;
 }
-/* line 116, ../sass/portfolio.scss */
+/* line 116, ../sass/about.scss */
 .social a:hover {
   text-decoration: none;
   color: gray;
 }
 
-/* line 123, ../sass/portfolio.scss */
+/* line 123, ../sass/about.scss */
 .job-description {
   padding-bottom: 1em;
 }
-/* line 126, ../sass/portfolio.scss */
+/* line 126, ../sass/about.scss */
 .job-description a {
   text-decoration: none;
   color: blue;
 }
-/* line 130, ../sass/portfolio.scss */
+/* line 130, ../sass/about.scss */
 .job-description a:hover {
   text-decoration: underline;
 }
 
-/* line 137, ../sass/portfolio.scss */
+/* line 136, ../sass/about.scss */
+.footer {
+  width: 100%;
+  height: 20px;
+}
+
+/* line 142, ../sass/about.scss */
+.title h2 {
+  padding-top: 2em;
+}
+/* line 145, ../sass/about.scss */
 .title h3 {
   padding-top: 1em;
   text-decoration: none;
   padding-bottom: 0;
 }
-/* line 142, ../sass/portfolio.scss */
+/* line 150, ../sass/about.scss */
 .title a {
   color: black;
+}
+
+/* line 155, ../sass/about.scss */
+.content {
+  padding-top: 1em;
+  font-size: 1.2em;
 }

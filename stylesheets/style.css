@@ -1,354 +1,286 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/*Styles*/
+/* line 3, ../sass/style.scss */
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
 }
-
-/* line 22, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
+/* line 10, ../sass/style.scss */
+html a, body a {
+  text-decoration: none;
+  color: blue;
 }
-
-/* line 24, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
+/* line 13, ../sass/style.scss */
+html a:hover, body a:hover {
+  text-decoration: underline;
 }
-
-/* line 26, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* line 17, ../sass/style.scss */
+html hr, body hr {
+  max-width: 500px;
 }
-
-/* line 28, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+/* line 20, ../sass/style.scss */
+html h1, html h2, html h3, html p, body h1, body h2, body h3, body p {
+  text-align: center;
+  margin-top: 0;
 }
-
-/* line 30, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
+/* line 25, ../sass/style.scss */
+html h1, html h2, html h3, body h1, body h2, body h3 {
+  text-transform: uppercase;
 }
-/* line 103, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+/* line 29, ../sass/style.scss */
+html h2, html h3, body h2, body h3 {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-/* line 32, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
+/* line 36, ../sass/style.scss */
+html .black, body .black {
+  /*background-color: black;*/
+  background-color: #2a3440;
 }
-
-/* line 116, ../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+/* line 40, ../sass/style.scss */
+html .white-txt, body .white-txt {
+  color: white;
 }
-
-/* Body */
-/* line 9, ../sass/style.scss */
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-}
-/* line 15, ../sass/style.scss */
-body .bold {
+/* line 43, ../sass/style.scss */
+html .bold, body .bold {
   font-weight: bold;
 }
-/* line 19, ../sass/style.scss */
-body h1 {
-  font-size: 30px;
-  font-weight: bold;
-}
-/* line 24, ../sass/style.scss */
-body h2 {
-  font-size: 25px;
-}
-/* line 28, ../sass/style.scss */
-body h4 {
-  font-size: 14px;
-  color: gray;
-}
 
-/* line 34, ../sass/style.scss */
-.background-pic {
-  background: url("../img/ocean.png") no-repeat center center fixed;
+/* line 48, ../sass/style.scss */
+.section-large {
+  /*background: url("../ocean.png") no-repeat center center fixed;*/
+  background-color: #2a3440;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-/* line 42, ../sass/style.scss */
-.work-container {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Animation Duration and deley */
-/* line 49, ../sass/style.scss */
-#header {
-  -webkit-animation-duration: 4s;
-  -webkit-animation-delay: 1s;
-  /*-webkit-animation-iteration-count: infinite;*/
-}
-
-/* Container that the header lives in */
-/* line 56, ../sass/style.scss */
-.header-container {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
-  /*display: inline-block;*/
-  height: 12%;
-  /*width: 90%;*/
-  max-width: 75%;
-}
-
-/* line 67, ../sass/style.scss */
-.header {
-  /*display: inline-block;*/
-  /*margin: 0 auto;*/
-  text-align: center;
-}
-/* line 72, ../sass/style.scss */
-.header .tag {
-  letter-spacing: 2.5px;
-}
-/* line 76, ../sass/style.scss */
-.header a {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 82, ../sass/style.scss */
-.links {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   position: relative;
-  float: right;
-  margin-top: 0px;
-  margin-right: 0;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
+  transition: opacity 1s ease;
+}
+/* line 62, ../sass/style.scss */
+.section-large h1 {
+  /*color: #fff;*/
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding-top: 5em;
+}
+/* line 70, ../sass/style.scss */
+.section-large a {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 720px) {
+  /* line 79, ../sass/style.scss */
+  .section-large h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+
+  /* line 84, ../sass/style.scss */
+  .section-large-link {
+    font-size: 15px;
+    padding: 0;
+    position: relative;
+  }
 }
 /* line 91, ../sass/style.scss */
-.links a {
-  text-decoration: none;
-  color: black;
-  /*font-size: 18px;*/
-}
-/* line 96, ../sass/style.scss */
-.links a:hover {
-  color: white;
-  font-weight: bold;
+.section-large-link {
+  position: relative;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 50px;
+  float: 0;
+  text-align: center;
 }
 
-/* line 103, ../sass/style.scss */
-.work-links {
-  position: relative;
-  float: right;
-  margin-right: 0;
-  top: 0px;
-  word-spacing: 25px;
-  font-weight: bold;
+/* line 100, ../sass/style.scss */
+.section-10 {
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+@media screen and (max-width: 720px) {
+  /* line 100, ../sass/style.scss */
+  .section-10 {
+    height: 20vh;
+  }
+}
+
 /* line 111, ../sass/style.scss */
-.work-links a {
-  text-decoration: none;
-  color: gray;
-  /*font-size: 18px;*/
+.section-20 {
+  height: 25vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-/* line 116, ../sass/style.scss */
-.work-links a:hover {
-  color: black;
-  font-weight: bold;
+/* line 118, ../sass/style.scss */
+.section-20 h2 {
+  padding-top: 20px;
 }
-/* line 122, ../sass/style.scss */
-.work-links .current {
-  color: black;
-  border-bottom: 2px solid black;
+@media screen and (max-width: 720px) {
+  /* line 111, ../sass/style.scss */
+  .section-20 {
+    height: 30vh;
+  }
 }
 
-/* line 128, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
+.section-50 {
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+/* line 134, ../sass/style.scss */
+.section-70 {
+  height: 70vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+/* line 142, ../sass/style.scss */
+.section-80 {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  /* line 142, ../sass/style.scss */
+  .section-80 {
+    height: 90vh;
+  }
+}
+
+/* line 154, ../sass/style.scss */
+.section-100 {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+/* line 162, ../sass/style.scss */
+.section-container {
+  height: 75%;
+  max-width: 700px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+}
+/* line 171, ../sass/style.scss */
+.section-container h2, .section-container h3, .section-container p {
+  color: black;
+  text-decoration: none;
+}
+/* line 175, ../sass/style.scss */
+.section-container h2 {
+  padding-top: 25px;
+}
+@media screen and (max-width: 600px) {
+  /* line 162, ../sass/style.scss */
+  .section-container {
+    font-size: 14px;
+    height: 80%;
+  }
+  /* line 182, ../sass/style.scss */
+  .section-container h2 {
+    padding-top: 10px;
+  }
+}
+
+/* line 188, ../sass/style.scss */
+.no-underline {
+  text-decoration: none;
+}
+
+/* line 193, ../sass/style.scss */
+.about {
+  font-size: 18px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 199, ../sass/style.scss */
+.about p {
+  padding-bottom: 10px;
+}
+
+/* line 205, ../sass/style.scss */
+.header {
+  text-decoration: none;
+  color: black;
+}
+/* line 209, ../sass/style.scss */
+.header:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 215, ../sass/style.scss */
 .social {
-  position: relative;
-  float: left;
-  margin-left: 0;
-  top: 0px;
-  word-spacing: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1em;
+  word-spacing: 4em;
 }
-
-/* line 136, ../sass/style.scss */
-.work-social {
-  /*display: inline-block;*/
-  color: gray;
-  position: relative;
-  float: left;
-  margin-left: 0;
-  top: 0px;
-  word-spacing: 25px;
-}
-
-/* line 146, ../sass/style.scss */
-.social-icon {
-  color: black;
-  font-size: 16px;
-}
-/* line 150, ../sass/style.scss */
-.social-icon:hover {
-  color: white;
-}
-
-/* line 155, ../sass/style.scss */
-.work-social-icon {
-  color: gray;
-  /*font-size: 15px;*/
-}
-/* line 159, ../sass/style.scss */
-.work-social-icon:hover {
-  color: black;
-}
-
-/*@media screen and (max-width: 768px) {*/
-@media screen and (max-width: 800px) {
-  /* line 167, ../sass/style.scss */
-  .header-container {
-    margin-top: 50px;
-    /*width: 200px;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  /* line 175, ../sass/style.scss */
-  .header {
-    position: relative;
-    padding-top: 0px;
-    text-align: center;
-  }
-  /* line 180, ../sass/style.scss */
-  .header .tag {
-    letter-spacing: 2.5px;
-  }
-
-  /* line 185, ../sass/style.scss */
-  .links {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    top: 60px;
-    word-spacing: 25px;
-  }
-
-  /* line 195, ../sass/style.scss */
-  .social {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 40px;
-    word-spacing: 25px;
-  }
-
-  /* line 205, ../sass/style.scss */
-  .work-links {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    top: 60px;
-    word-spacing: 25px;
-  }
-
-  /* line 215, ../sass/style.scss */
-  .work-social {
-    position: relative;
-    text-align: center;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 40px;
-    word-spacing: 25px;
-  }
-
-  /* line 225, ../sass/style.scss */
-  .work-content {
-    position: relative;
-    padding-top: 70px;
-  }
-
-  /* line 230, ../sass/style.scss */
-  .job-description {
-    padding-bottom: 20px;
-  }
-}
-/* line 236, ../sass/style.scss */
-.work-content {
-  position: relative;
-  top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-/* line 242, ../sass/style.scss */
-.work-content a {
+/* line 221, ../sass/style.scss */
+.social a {
   text-decoration: none;
-  color: black;
 }
-
-/* line 248, ../sass/style.scss */
-.job-description {
-  padding-top: 10px;
+/* line 224, ../sass/style.scss */
+.social a:hover {
+  text-decoration: none;
   color: gray;
 }
-/* line 252, ../sass/style.scss */
-.job-description a {
-  color: gray;
-  text-decoration: underline;
-}
-/* line 256, ../sass/style.scss */
-.job-description a:hover {
-  color: black;
+
+/* line 232, ../sass/style.scss */
+#main-splash {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
-/* line 264, ../sass/style.scss */
-.work-twitter a:hover {
-  color: #00aced;
-}
-
-/* line 270, ../sass/style.scss */
-.work-facebook a:hover {
-  color: #3b5998;
-}
-
-/* line 276, ../sass/style.scss */
-.work-instagram a:hover {
-  color: #517fa4;
+/* line 243, ../sass/style.scss */
+#social-link {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  /*-webkit-animation-delay: 1s;
+  	 -moz-animation-delay: 1s;
+  	   -o-animation-delay: 1s;
+  	 	  animation-delay: 1s;*/
 }
