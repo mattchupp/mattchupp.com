@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Matt Chupp &#8212; Developer</title>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Typeface -->
@@ -48,17 +49,34 @@
 			render: function() {
 				return <div>IT Intern @ Elevation Church</div>; 
 			}
+		});
+		var ElevationJobYear = React.createClass({
+			render: function() {
+				return <div>Summer 2015</div>; 
+			}
 		}); 
 		var BennerLibrary = React.createClass({
 			render: function() {
-				return <div>Web Developer @ Benner Library</div>
+				return <div>Web Developer @ Benner Library</div>;
 			}
-		})
+		}); 
+		var BennerLibraryYear = React.createClass({
+			render: function() {
+				return <div>August 2014 - May 2015</div>;
+			}
+		});
+		var Skills = React.createClass({
+			render: function() {
+				return <div>CSS | Javascript | JQuery</div>;
+			}
+		});  
 
 
 		React.render(<Name />, document.getElementById('name'));
 		React.render(<ElevationJob />, document.getElementById('elevation'));
+		React.render(<ElevationJobYear />, document.getElementById('elevation-year'));
 		React.render(<BennerLibrary />, document.getElementById('benner'));
+		React.render(<BennerLibraryYear />, document.getElementById('benner-year'));
 
 
 	</script>
@@ -88,12 +106,12 @@
 			<h2>Work</h2>
 			<hr />
 			<p id="elevation" class="bold"></p>
-			<p>Summer 2015</p>
+			<p id="elevation-year"></p>
 			<p id="benner" class="bold"></p>
-			<p>August 2014 - May 2015</p>
+			<p id="benner-year"></p>
 			<h2>Skills</h2>
 			<hr />
-			<p>CSS | Javascript | JQuery </p>
+			<p id="skills">CSS | Javascript | JQuery </p>
 		</div>
 	</div>	
 
