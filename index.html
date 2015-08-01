@@ -4,16 +4,16 @@
 	<title>Matt Chupp &#8212; Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="animate.min.css">
+	<!-- Typeface -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<!-- Social Icons -->
 	<link href="webfonts/ss-social-regular.css" rel="stylesheet" />
 
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="animate.min.css">
+
 	<!-- Style.css -->
 	<link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-	<!-- Typeface -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 	<!-- JQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -23,17 +23,34 @@
  		new WOW().init();
 	</script>
 
+	<!-- React.js -->
+	<script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+
 	<script type="text/javascript">
 		$(window).scroll(function(){
 		    $(".section-large").css("opacity", 1 - $(window).scrollTop() / 1500);
 	  	});
 	</script>
 
+
 <body>
+
+	<script type="text/jsx">
+
+		var Name = React.createClass({
+	    	render: function() {
+	        	return <div>Matt Chupp</div>;
+	    	}
+		});
+ 
+		React.render(<Name />, document.getElementById('name'));
+
+	</script>
 
 	<div id="splash" class="section-large">
 		<div id="main-splash" class="animated fadeIn">
-			<a href="#about" class="header"><h1>Matt Chupp</h1></a>
+			<a href="#about" class="header"><h1 id="name"></h1></a>
 			<div class="social">
 				<a href="http://www.twitter.com/mattchupp" class="ss-social ss-icon social-icon social ss-twitter" target="_blank"></a>
 				<a href="http://instagr.am/mattychupp" class="ss-social ss-icon social-icon social ss-instagram" target="_blank"></a>
