@@ -243,8 +243,8 @@ html .bold, body .bold {
 @media screen and (max-width: 600px) {
   /* line 205, ../sass/style.scss */
   .section-container {
-    font-size: 14px;
-    height: 80%;
+    /*font-size: 14px;*/
+    /*height: 75%;*/
   }
   /* line 225, ../sass/style.scss */
   .section-container h2 {
