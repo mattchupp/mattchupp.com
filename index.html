@@ -33,18 +33,33 @@
 	  	});
 	</script>
 
-
 <body>
+
 
 	<script type="text/jsx">
 
+
 		var Name = React.createClass({
-	    	render: function() {
-	        	return <div>Matt Chupp</div>;
-	    	}
+			render: function() {
+    			return <div>Matt Chupp</div>;
+			}
 		});
- 
+		var ElevationJob = React.createClass({
+			render: function() {
+				return <div>IT Intern @ Elevation Church</div>; 
+			}
+		}); 
+		var BennerLibrary = React.createClass({
+			render: function() {
+				return <div>Web Developer @ Benner Library</div>
+			}
+		})
+
+
 		React.render(<Name />, document.getElementById('name'));
+		React.render(<ElevationJob />, document.getElementById('elevation'));
+		React.render(<BennerLibrary />, document.getElementById('benner'));
+
 
 	</script>
 
@@ -67,17 +82,15 @@
 				<a href="http://mattchupp.com/blog" target="_blank">blog</a>.</p>
 		</div>
 	</div>
-	<div id="work" class="section-100 black white-txt history">
+	<div id="work" class="section-90 black white-txt history">
 		<h2 class="wow slideInLeft">History</h2>
 		<div class="section-container wow slideInRight">
 			<h2>Work</h2>
 			<hr />
-			<p class="bold">IT Intern @ Elevation Church</p>
+			<p id="elevation" class="bold"></p>
 			<p>Summer 2015</p>
-			<p class="bold">Web Developer @ Benner Library</p>
+			<p id="benner" class="bold"></p>
 			<p>August 2014 - May 2015</p>
-			<p class="bold">IT Intern @ The Vineyard Church</p>
-			<p>Summer 2014</p>
 			<h2>Skills</h2>
 			<hr />
 			<p>CSS | Javascript | JQuery </p>
