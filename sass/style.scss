@@ -45,6 +45,36 @@ html, body {
 	}
 }
 
+/*.section {
+	margin: 0; 
+	width: 100%; 
+
+	.full {
+		height: 100vh; 
+		background-color: #2a3440;
+		-webkit-background-size: cover;
+	  	   -moz-background-size: cover;
+	  		 -o-background-size: cover;
+	  			background-size: cover;
+	  	padding: 0;
+		position: relative;
+		transition: opacity 1s ease;
+		
+		h1 {
+			color: rgba(255,255,255,.5);
+			font-size: 40px;
+			letter-spacing: 10px;
+			padding-top: 5em;
+
+			@media screen and (max-width: 720px) {
+				font-size: 30px; 
+				letter-spacing: 10px; 
+			}
+		}
+	}	
+
+}*/
+
 .section-large {
 	/*background: url("../ocean.png") no-repeat center center fixed;*/
 	background-color: #2a3440;
@@ -72,23 +102,21 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 	}
-}
 
-@media screen and (max-width: 720px) {
-	.section-large {
+	@media screen and (max-width: 720px) {
 		h1 {
 			font-size: 30px;
 			letter-spacing: 10px;
 		}
 	}
-	.section-large-link {
-		font-size: 15px;
-		padding: 0;
-		position: relative;
-	}
 }
 
-.section-large-link {
+@media screen and (max-width: 720px) {
+	
+	
+}
+
+/*.section-large-link {
 	position: relative;
 	font-size: 18px;
 	padding: 0;
@@ -96,7 +124,14 @@ html, body {
 	letter-spacing: 50px;
 	float: 0;
 	text-align: center;
-}
+
+	@media screen and (max-width: 720px) {
+		font-size: 15px;
+		padding: 0;
+		position: relative;
+	}
+}*/
+
 .section-10 {
 	height: 10vh; 
 	width: 100%;

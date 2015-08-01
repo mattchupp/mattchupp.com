@@ -50,7 +50,36 @@ html .bold, body .bold {
   font-weight: bold;
 }
 
-/* line 48, ../sass/style.scss */
+/*.section {
+	margin: 0; 
+	width: 100%; 
+
+	.full {
+		height: 100vh; 
+		background-color: #2a3440;
+		-webkit-background-size: cover;
+	  	   -moz-background-size: cover;
+	  		 -o-background-size: cover;
+	  			background-size: cover;
+	  	padding: 0;
+		position: relative;
+		transition: opacity 1s ease;
+		
+		h1 {
+			color: rgba(255,255,255,.5);
+			font-size: 40px;
+			letter-spacing: 10px;
+			padding-top: 5em;
+
+			@media screen and (max-width: 720px) {
+				font-size: 30px; 
+				letter-spacing: 10px; 
+			}
+		}
+	}	
+
+}*/
+/* line 78, ../sass/style.scss */
 .section-large {
   /*background: url("../ocean.png") no-repeat center center fixed;*/
   background-color: #2a3440;
@@ -65,7 +94,7 @@ html .bold, body .bold {
   position: relative;
   transition: opacity 1s ease;
 }
-/* line 62, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .section-large h1 {
   /*color: #fff;*/
   color: rgba(255, 255, 255, 0.5);
@@ -73,39 +102,36 @@ html .bold, body .bold {
   letter-spacing: 10px;
   padding-top: 5em;
 }
-/* line 70, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .section-large a {
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
-
 @media screen and (max-width: 720px) {
-  /* line 79, ../sass/style.scss */
+  /* line 107, ../sass/style.scss */
   .section-large h1 {
     font-size: 30px;
     letter-spacing: 10px;
   }
-
-  /* line 84, ../sass/style.scss */
-  .section-large-link {
-    font-size: 15px;
-    padding: 0;
-    position: relative;
-  }
-}
-/* line 91, ../sass/style.scss */
-.section-large-link {
-  position: relative;
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 50px;
-  float: 0;
-  text-align: center;
 }
 
-/* line 100, ../sass/style.scss */
+/*.section-large-link {
+	position: relative;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 50px;
+	float: 0;
+	text-align: center;
+
+	@media screen and (max-width: 720px) {
+		font-size: 15px;
+		padding: 0;
+		position: relative;
+	}
+}*/
+/* line 135, ../sass/style.scss */
 .section-10 {
   height: 10vh;
   width: 100%;
@@ -114,13 +140,13 @@ html .bold, body .bold {
   padding-bottom: 20px;
 }
 @media screen and (max-width: 720px) {
-  /* line 100, ../sass/style.scss */
+  /* line 135, ../sass/style.scss */
   .section-10 {
     height: 20vh;
   }
 }
 
-/* line 111, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .section-20 {
   height: 25vh;
   width: 100%;
@@ -128,18 +154,18 @@ html .bold, body .bold {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 118, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .section-20 h2 {
   padding-top: 20px;
 }
 @media screen and (max-width: 720px) {
-  /* line 111, ../sass/style.scss */
+  /* line 146, ../sass/style.scss */
   .section-20 {
     height: 30vh;
   }
 }
 
-/* line 126, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .section-50 {
   height: 50vh;
   width: 100%;
@@ -149,7 +175,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .section-70 {
   height: 70vh;
   width: 100%;
@@ -159,7 +185,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .section-80 {
   height: 80vh;
   width: 100%;
@@ -169,13 +195,13 @@ html .bold, body .bold {
   overflow: hidden;
 }
 @media screen and (max-width: 600px) {
-  /* line 142, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .section-80 {
     height: 90vh;
   }
 }
 
-/* line 154, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .section-100 {
   height: 100vh;
   width: 100%;
@@ -185,7 +211,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .section-container {
   height: 75%;
   max-width: 700px;
@@ -195,73 +221,73 @@ html .bold, body .bold {
   margin-bottom: auto;
   border-radius: 15px;
 }
-/* line 171, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .section-container h2, .section-container h3, .section-container p {
   color: black;
   text-decoration: none;
 }
-/* line 175, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .section-container h2 {
   padding-top: 25px;
 }
 @media screen and (max-width: 600px) {
-  /* line 162, ../sass/style.scss */
+  /* line 197, ../sass/style.scss */
   .section-container {
     font-size: 14px;
     height: 80%;
   }
-  /* line 182, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   .section-container h2 {
     padding-top: 10px;
   }
 }
 
-/* line 188, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .no-underline {
   text-decoration: none;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .about {
   font-size: 18px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 199, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .about p {
   padding-bottom: 10px;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .header {
   text-decoration: none;
   color: black;
 }
-/* line 209, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .header:hover {
   text-decoration: none;
   color: black;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .social {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.1em;
   word-spacing: 4em;
 }
-/* line 221, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .social a {
   text-decoration: none;
 }
-/* line 224, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .social a:hover {
   text-decoration: none;
   color: gray;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 #main-splash {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -273,7 +299,7 @@ html .bold, body .bold {
   animation-delay: 1s;
 }
 
-/* line 243, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 #social-link {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
