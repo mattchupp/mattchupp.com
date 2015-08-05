@@ -24,6 +24,19 @@
  		new WOW().init();
 	</script>
 
+	<!-- Google Analytics-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-65975938-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+
 	<!-- React.js -->
 	<script src="https://fb.me/react-0.13.3.js"></script>
     <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
@@ -36,47 +49,60 @@
 
 <body>
 
+	<!-- Hi, <a href="about/index.html">I'm Matt</a> and I <a href="portfolio/index.html" target="_blank">make websites</a>. 
+				I also like to play guitar and share my thoughts on my 
+				<a href="http://mattchupp.com/blog" target="_blank">blog</a>. -->
+
 
 	<script type="text/jsx">
 
+		// variables for content 
+		var name = "Matt Chupp"; 
+		var elevationJob = "IT Intern @ Elevation Church";
+		var elevationJobYear = "Summer 2015"; 
+		var bennerLibrary = "Web Developer @ Benner Library"; 
+		var bennerLibraryYear = "August 2014 - May 2015";
+		var skills = "CSS | Javascript | JQuery"; 
 
+		// ****
 		var Name = React.createClass({
 			render: function() {
-    			return <div>Matt Chupp</div>;
+    			return <div>{name}</div>;
 			}
 		});
 		var ElevationJob = React.createClass({
 			render: function() {
-				return <div>IT Intern @ Elevation Church</div>; 
+				return <div>{elevationJob}</div>; 
 			}
 		});
 		var ElevationJobYear = React.createClass({
 			render: function() {
-				return <div>Summer 2015</div>; 
+				return <div>{elevationJobYear}</div>; 
 			}
 		}); 
 		var BennerLibrary = React.createClass({
 			render: function() {
-				return <div>Web Developer @ Benner Library</div>;
+				return <div>{bennerLibrary}</div>;
 			}
 		}); 
 		var BennerLibraryYear = React.createClass({
 			render: function() {
-				return <div>August 2014 - May 2015</div>;
+				return <div>{bennerLibraryYear}</div>;
 			}
 		});
 		var Skills = React.createClass({
 			render: function() {
-				return <div>CSS | Javascript | JQuery</div>;
+				return <div>{skills}</div>;
 			}
 		});  
 
-
+		// render
 		React.render(<Name />, document.getElementById('name'));
 		React.render(<ElevationJob />, document.getElementById('elevation'));
 		React.render(<ElevationJobYear />, document.getElementById('elevation-year'));
 		React.render(<BennerLibrary />, document.getElementById('benner'));
 		React.render(<BennerLibraryYear />, document.getElementById('benner-year'));
+		React.render(<Skills />, document.getElementById('skills'));
 
 
 	</script>
@@ -95,9 +121,12 @@
 	<div id="about" class="section-20">
 		<h2 class="wow fadeIn">About</h2>
 		<div class="about wow fadeIn">
-			<p>Hi, <a href="about/index.html">I'm Matt</a> and I <a href="portfolio/index.html" target="_blank">make websites</a>. 
-				I also like to play guitar and share my thoughts on my 
-				<a href="http://mattchupp.com/blog" target="_blank">blog</a>.</p>
+			<p>
+				Hi, <a href="about/index.html">I'm Matt</a> and I 
+				<a href="portfolio/index.html" target="_blank">make websites</a>. 
+				I also like to play guitar and share thoughts on my 
+				<a href="http://mattchupp.com/blog" target="_blank">blog</a>.
+			</p>
 		</div>
 	</div>
 	<div id="work" class="section-100 black white-txt history">
@@ -111,7 +140,7 @@
 			<p id="benner-year"></p>
 			<h2>Skills</h2>
 			<hr />
-			<p id="skills">CSS | Javascript | JQuery </p>
+			<p id="skills"></p>
 		</div>
 	</div>	
 
