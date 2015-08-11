@@ -39,65 +39,17 @@
 	<script src="https://fb.me/react-0.13.3.js"></script>
     <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
 
+   	<!-- js for fade out for main splash -->
 	<script type="text/javascript">
 		$(window).scroll(function(){
 		    $(".section-large").css("opacity", 1 - $(window).scrollTop() / 1500);
 	  	});
 	</script>
 
+	<!-- Link to index.js file // jsx file with all information for webpage -->
+	<script src="js/index.js" type="text/jsx"></script>
+
 <body>
-
-	<script type="text/jsx">
-
-		// variables for content 
-		var name = "Matt Chupp"; 
-		var elevationJob = "IT Intern @ Elevation Church";
-		var elevationJobYear = "Summer 2015"; 
-		var bennerLibrary = "Web Developer @ Benner Library"; 
-		var bennerLibraryYear = "August 2014 - May 2015";
-		var skills = "CSS | Javascript | JQuery"; 
-
-		// ****
-		var Name = React.createClass({
-			render: function() {
-    			return <div>{name}</div>;
-			}
-		});
-		var ElevationJob = React.createClass({
-			render: function() {
-				return <div>{elevationJob}</div>; 
-			}
-		});
-		var ElevationJobYear = React.createClass({
-			render: function() {
-				return <div>{elevationJobYear}</div>; 
-			}
-		}); 
-		var BennerLibrary = React.createClass({
-			render: function() {
-				return <div>{bennerLibrary}</div>;
-			}
-		}); 
-		var BennerLibraryYear = React.createClass({
-			render: function() {
-				return <div>{bennerLibraryYear}</div>;
-			}
-		});
-		var Skills = React.createClass({
-			render: function() {
-				return <div>{skills}</div>;
-			}
-		});  
-
-		// render
-		React.render(<Name />, document.getElementById('name'));
-		React.render(<ElevationJob />, document.getElementById('elevation'));
-		React.render(<ElevationJobYear />, document.getElementById('elevation-year'));
-		React.render(<BennerLibrary />, document.getElementById('benner'));
-		React.render(<BennerLibraryYear />, document.getElementById('benner-year'));
-		React.render(<Skills />, document.getElementById('skills'));
-
-	</script>
 
 	<div id="splash" class="section-large">
 		<div id="main-splash" class="animated fadeIn">
