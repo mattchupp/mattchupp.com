@@ -1,94 +1,38 @@
 /*Styles*/
-/* line 3, ../sass/style.scss */
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-/* line 10, ../sass/style.scss */
-html a, body a {
-  text-decoration: none;
-  color: blue;
-}
-/* line 13, ../sass/style.scss */
-html a:hover, body a:hover {
-  text-decoration: underline;
-}
-/* line 17, ../sass/style.scss */
-html hr, body hr {
-  max-width: 500px;
-}
-/* line 20, ../sass/style.scss */
-html h1, html h2, html h3, html p, body h1, body h2, body h3, body p {
-  text-align: center;
-  margin-top: 0;
-}
-/* line 25, ../sass/style.scss */
-html h1, html h2, html h3, body h1, body h2, body h3 {
-  text-transform: uppercase;
-}
-/* line 29, ../sass/style.scss */
-html h2, html h3, body h2, body h3 {
-  letter-spacing: 5px;
-  text-decoration: underline;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 36, ../sass/style.scss */
-html .tracks, body .tracks {
-  /*background-color: black;*/
-  background-color: #2a3440;
-}
-@media only screen and (max-device-width: 600px) {
-  /* line 36, ../sass/style.scss */
-  html .tracks, body .tracks {
-    background-image: url("../assets/tracks.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-  }
-}
-/* line 48, ../sass/style.scss */
-html .white-txt, body .white-txt {
-  color: white;
-}
-/* line 51, ../sass/style.scss */
-html .bold, body .bold {
-  font-weight: bold;
+/* Variables for style.scss */
+/* font */
+/* Media Size */
+/* ** Colors ** */
+/* 
+Main background color for sections 
+*/
+/* Dark Blue */
+/* 
+secondary color for text and 
+other background for sections 
+*/
+/*white*/
+/* animation duration times */
+/* 
+  animation duration for main splash 
+*/
+/* line 7, ../sass/_animationtimes.scss */
+#main-splash {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
-/*.section {
-	margin: 0; 
-	width: 100%; 
-
-	.full {
-		height: 100vh; 
-		background-color: #2a3440;
-		-webkit-background-size: cover;
-	  	   -moz-background-size: cover;
-	  		 -o-background-size: cover;
-	  			background-size: cover;
-	  	padding: 0;
-		position: relative;
-		transition: opacity 1s ease;
-		
-		h1 {
-			color: rgba(255,255,255,.5);
-			font-size: 40px;
-			letter-spacing: 10px;
-			padding-top: 5em;
-
-			@media screen and (max-width: 720px) {
-				font-size: 30px; 
-				letter-spacing: 10px; 
-			}
-		}
-	}	
-
-}*/
-/* line 86, ../sass/style.scss */
+/* Sections */
+/*  
+    These are all of the sections that split up the homepage
+*/
+/* line 8, ../sass/_sections.scss */
 .section-large {
   /*background: url("../ocean.png") no-repeat center center fixed;*/
   background-color: #2a3440;
@@ -103,7 +47,7 @@ html .bold, body .bold {
   position: relative;
   transition: opacity 1s ease;
 }
-/* line 100, ../sass/style.scss */
+/* line 22, ../sass/_sections.scss */
 .section-large h1 {
   /*color: #fff;*/
   color: rgba(255, 255, 255, 0.5);
@@ -111,36 +55,21 @@ html .bold, body .bold {
   letter-spacing: 10px;
   padding-top: 5em;
 }
-/* line 108, ../sass/style.scss */
+/* line 30, ../sass/_sections.scss */
 .section-large a {
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 720px) {
-  /* line 115, ../sass/style.scss */
+  /* line 37, ../sass/_sections.scss */
   .section-large h1 {
     font-size: 30px;
     letter-spacing: 10px;
   }
 }
 
-/*.section-large-link {
-	position: relative;
-	font-size: 18px;
-	padding: 0;
-	margin: 0;
-	letter-spacing: 50px;
-	float: 0;
-	text-align: center;
-
-	@media screen and (max-width: 720px) {
-		font-size: 15px;
-		padding: 0;
-		position: relative;
-	}
-}*/
-/* line 143, ../sass/style.scss */
+/* line 44, ../sass/_sections.scss */
 .section-10 {
   height: 10vh;
   width: 100%;
@@ -149,13 +78,13 @@ html .bold, body .bold {
   padding-bottom: 20px;
 }
 @media screen and (max-width: 720px) {
-  /* line 143, ../sass/style.scss */
+  /* line 44, ../sass/_sections.scss */
   .section-10 {
     height: 20vh;
   }
 }
 
-/* line 154, ../sass/style.scss */
+/* line 55, ../sass/_sections.scss */
 .section-20 {
   height: 25vh;
   width: 100%;
@@ -163,18 +92,18 @@ html .bold, body .bold {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 161, ../sass/style.scss */
+/* line 62, ../sass/_sections.scss */
 .section-20 h2 {
   padding-top: 20px;
 }
 @media screen and (max-width: 720px) {
-  /* line 154, ../sass/style.scss */
+  /* line 55, ../sass/_sections.scss */
   .section-20 {
     height: 35vh;
   }
 }
 
-/* line 169, ../sass/style.scss */
+/* line 70, ../sass/_sections.scss */
 .section-50 {
   height: 50vh;
   width: 100%;
@@ -184,7 +113,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 78, ../sass/_sections.scss */
 .section-70 {
   height: 70vh;
   width: 100%;
@@ -194,7 +123,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 86, ../sass/_sections.scss */
 .section-80 {
   height: 80vh;
   width: 100%;
@@ -204,13 +133,13 @@ html .bold, body .bold {
   overflow: hidden;
 }
 @media screen and (max-width: 600px) {
-  /* line 185, ../sass/style.scss */
+  /* line 86, ../sass/_sections.scss */
   .section-80 {
     height: 90vh;
   }
 }
 
-/* line 197, ../sass/style.scss */
+/* line 98, ../sass/_sections.scss */
 .section-90 {
   height: 90vh;
   width: 100%;
@@ -220,7 +149,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 106, ../sass/_sections.scss */
 .section-100 {
   height: 100vh;
   width: 100%;
@@ -230,7 +159,7 @@ html .bold, body .bold {
   overflow: hidden;
 }
 
-/* line 213, ../sass/style.scss */
+/* line 114, ../sass/_sections.scss */
 .section-container {
   height: 75%;
   max-width: 700px;
@@ -241,98 +170,128 @@ html .bold, body .bold {
   border-radius: 15px;
 }
 @media only screen and (max-device-width: 600px) {
-  /* line 213, ../sass/style.scss */
+  /* line 114, ../sass/_sections.scss */
   .section-container {
     background-color: transparent;
     -webkit-backdrop-filter: blur(10px);
   }
 }
-/* line 227, ../sass/style.scss */
+/* line 128, ../sass/_sections.scss */
 .section-container h2, .section-container h3, .section-container p {
   color: black;
   text-decoration: none;
 }
-/* line 231, ../sass/style.scss */
+/* line 132, ../sass/_sections.scss */
 .section-container h2 {
   padding-top: 25px;
 }
 @media screen and (max-width: 600px) {
-  /* line 213, ../sass/style.scss */
-  .section-container {
-    /*font-size: 14px;*/
-    /*height: 75%;*/
-  }
-  /* line 238, ../sass/style.scss */
+  /* line 137, ../sass/_sections.scss */
   .section-container h2 {
     padding-top: 10px;
   }
 }
 
-/* line 244, ../sass/style.scss */
-.no-underline {
+/* line 9, ../sass/style.scss */
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 16, ../sass/style.scss */
+html a, body a {
+  text-decoration: none;
+  color: blue;
+}
+/* line 19, ../sass/style.scss */
+html a:hover, body a:hover {
+  text-decoration: underline;
+}
+/* line 23, ../sass/style.scss */
+html hr, body hr {
+  max-width: 500px;
+}
+/* line 26, ../sass/style.scss */
+html h1, html h2, html h3, html p, body h1, body h2, body h3, body p {
+  text-align: center;
+  margin-top: 0;
+}
+/* line 31, ../sass/style.scss */
+html h1, html h2, html h3, body h1, body h2, body h3 {
+  text-transform: uppercase;
+}
+/* line 35, ../sass/style.scss */
+html h2, html h3, body h2, body h3 {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 42, ../sass/style.scss */
+html .tracks, body .tracks {
+  /*background-color: black;*/
+  background-color: #2a3440;
+}
+@media only screen and (max-device-width: 600px) {
+  /* line 42, ../sass/style.scss */
+  html .tracks, body .tracks {
+    background-image: url("../assets/tracks.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+}
+/* line 54, ../sass/style.scss */
+html .no-underline, body .no-underline {
   text-decoration: none;
 }
+/* line 58, ../sass/style.scss */
+html .white-txt, body .white-txt {
+  color: white;
+}
+/* line 61, ../sass/style.scss */
+html .bold, body .bold {
+  font-weight: bold;
+}
 
-/* line 249, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .about {
   font-size: 18px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 255, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .about p {
   padding-bottom: 10px;
 }
 
-/* line 261, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .header {
   text-decoration: none;
   color: black;
 }
-/* line 265, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .header:hover {
   text-decoration: none;
   color: black;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .social {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.1em;
   word-spacing: 4em;
 }
-/* line 277, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .social a {
   text-decoration: none;
 }
-/* line 280, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .social a:hover {
   text-decoration: none;
   color: gray;
-}
-
-/* line 288, ../sass/style.scss */
-#main-splash {
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-/* line 299, ../sass/style.scss */
-#social-link {
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
-  /*-webkit-animation-delay: 1s;
-  	 -moz-animation-delay: 1s;
-  	   -o-animation-delay: 1s;
-  	 	  animation-delay: 1s;*/
 }
