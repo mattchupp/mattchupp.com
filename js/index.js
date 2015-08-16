@@ -15,7 +15,7 @@
 		var elevationJobYear = "Summer 2015"; 
 		var bennerLibrary = "Web Developer @ Benner Library"; 
 		var bennerLibraryYear = "August 2014 - May 2015";
-		var skills = "CSS | Javascript | PHP "; 
+		// var skills = "CSS | Javascript | PHP "; 
 
 		// ****
 		var Name = React.createClass({
@@ -63,11 +63,11 @@
 				return <div>{bennerLibraryYear}</div>;
 			}
 		});
-		var Skills = React.createClass({
-			render: function() {
-				return <div>{skills}</div>;
-			}
-		});  
+		// var Skills = React.createClass({
+		// 	render: function() {
+		// 		return <div>{skills}</div>;
+		// 	}
+		// });  
 
 		// render
 		React.render(<Name />, document.getElementById('name'));
@@ -79,7 +79,7 @@
 		React.render(<ElevationJobYear />, document.getElementById('elevation-year'));
 		React.render(<BennerLibrary />, document.getElementById('benner'));
 		React.render(<BennerLibraryYear />, document.getElementById('benner-year'));
-		React.render(<Skills />, document.getElementById('skills'));
+		// React.render(<Skills />, document.getElementById('skills'));
 
 
 		
