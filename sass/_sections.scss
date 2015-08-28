@@ -1,6 +1,6 @@
 /* Sections */
 
-/*  
+/*
     These are all of the sections that split up the homepage
 */
 
@@ -12,7 +12,7 @@
   	   -moz-background-size: cover;
   		 -o-background-size: cover;
   			background-size: cover;
-	height: 100vh; 
+	height: 100vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -42,9 +42,9 @@
 }
 
 .section-10 {
-	height: 10vh; 
+	height: 10vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
@@ -53,9 +53,9 @@
 	}
 }
 .section-20 {
-	height: 25vh; 
+	height: 25vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
@@ -68,25 +68,25 @@
 	}
 }
 .section-50 {
-	height: 50vh; 
+	height: 50vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
 }
 .section-70 {
-	height: 70vh; 
+	height: 70vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
 }
 .section-80 {
-	height: 80vh; 
+	height: 80vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
@@ -96,27 +96,32 @@
 	}
 }
 .section-90 {
-	height: 90vh; 
+	height: 90vh;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
 }
 .section-100 {
-	height: 100vh; 
+	height: 100vh;
+	// height: 600px;
 	width: 100%;
-	margin: 0; 
+	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
+
+	@media only screen and (min-device-width: $media-medium) {
+		height: 600px;
+	}
 }
 .section-container {
-	height: 90%;
+	height: 85%;
 	max-width: 700px;
 	background-color: white;
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 	margin-bottom: auto;
 	border-radius: 15px;
 
