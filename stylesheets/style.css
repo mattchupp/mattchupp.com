@@ -51,7 +51,7 @@ other background for sections
 .section-large h1 {
   /*color: #fff;*/
   color: rgba(255, 255, 255, 0.5);
-  font-size: 40px;
+  font-size: 4em;
   letter-spacing: 10px;
   padding-top: 5em;
 }
@@ -64,7 +64,7 @@ other background for sections
 @media screen and (max-width: 720px) {
   /* line 37, ../sass/_sections.scss */
   .section-large h1 {
-    font-size: 30px;
+    font-size: 2.8em;
     letter-spacing: 10px;
   }
 }
@@ -289,7 +289,7 @@ html .bold, body .bold {
 .social {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.1em;
+  font-size: 1.4em;
   word-spacing: 4em;
 }
 /* line 96, ../sass/style.scss */
